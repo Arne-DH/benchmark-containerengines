@@ -1,0 +1,12 @@
+# Graphs
+*.png
+
+# raw data
+../containderd/raw/*
+../CRI-O/raw/*
+../lxc/raw/*
+../podman/raw/*
+*.csv
+
+# Outdated
+*.old

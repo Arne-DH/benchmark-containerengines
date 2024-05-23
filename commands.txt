@@ -1,0 +1,8 @@
+cpu_sysbench_command="sysbench cpu --cpu-max-prime=20000 --threads=1 run" # 
+memory_sysbench_command="sysbench --threads=1 --memory-total-size=102400M memory run" #
+rndrw_sysbench_command="sysbench fileio --file-total-size=5G prepare ; sysbench fileio --file-total-size=5G --file-test-mode=rndrw --time=300 --threads=1 run" # time 300s
+rndrd_sysbench_command="sysbench fileio --file-total-size=5G prepare ; sysbench fileio --file-total-size=5G --file-test-mode=rndrd --time=300 --threads=1 run" #
+rndwr_sysbench_command="sysbench fileio --file-total-size=5G prepare ; sysbench fileio --file-total-size=5G --file-test-mode=rndwr --time=300 --threads=1 run" #
+seqrd_sysbench_command="sysbench fileio --file-total-size=5G prepare ; sysbench fileio --file-total-size=5G --file-test-mode=seqrd --time=300 --threads=1 run"  # time 300s
+seqwr_sysbench_command="sysbench fileio --file-total-size=5G prepare ; sysbench fileio --file-total-size=5G --file-test-mode=seqwr --time=300 --threads=1 run"  # time 300s
+seqrewr_sysbench_command="sysbench fileio --file-total-size=5G prepare ; sysbench fileio --file-total-size=5G --file-test-mode=seqrewr --time=300 --threads=1 run"  # time 300s
